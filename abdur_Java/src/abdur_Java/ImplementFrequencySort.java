@@ -56,6 +56,7 @@ public class ImplementFrequencySort {
 				+ "^\\d\\-\\d\\d\\-\\d\\d\\d\\d", "32-1-2022");
 		System.out.println(p);
 		System.out.println("Successfully added to github");
+		System.out.println("Created a temp branch on Git");
 		
 	}
 	
