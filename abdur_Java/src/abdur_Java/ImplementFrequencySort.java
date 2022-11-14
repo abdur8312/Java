@@ -48,7 +48,7 @@ public class ImplementFrequencySort {
 	
 	public static void main(String[] args) {
 		//accepts date, month, year(from 01-01-2000 to 31-12-2099)
-		boolean p = Pattern.matches("^([0-2][0-9]|[0-9]|[3][0-1])\\-"
+		boolean p = Pattern.matches("^([0-2][0-9]|[0-9]|3[0-1])\\-"
 				+ "(0[1-9]|1[0-2]|[1,2,3,4,5,6,7,8,9])\\-"
 				+ "(20[0-9][0-9]|0[1-9]|[1-9][1-9]|2100)", "30-10-2100");
 		System.out.println(p);
