@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 //This program will take date in every known(only numbers) format and add it to a list
-public class TakeDateFormat {
+public class TakeDate {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		List<String> li = new ArrayList<String>();
