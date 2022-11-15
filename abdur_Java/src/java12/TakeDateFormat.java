@@ -12,7 +12,7 @@ public class TakeDateFormat {
 		for(int i = 0; i < n; i++) {
 			System.out.print("Enter the date : ");
 			String date = sc.next();
-			boolean p = Pattern.matches("^([0-2][0-9]|[0-9]|[3][0-1])\\-"
+			boolean p = Pattern.matches("^([0-2][0-9]|[0-9]|3[0-1])\\-"
 					+ "(0[1-9]|1[0-2]|[1,2,3,4,5,6,7,8,9])\\-"
 					+ "(20[0-9][0-9]|0[1-9]|[1-9][1-9]|2100)", date);
 			if(p) {
