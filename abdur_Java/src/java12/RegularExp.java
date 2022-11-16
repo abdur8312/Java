@@ -17,10 +17,10 @@ public class RegularExp {
 				+ "[a-zA-Z0-9!@#$%^&*()-_=+;:'\",.?><]{8,100}$", passW);
 		return res2;
 	}
-	/* return true if the mobile number ranges from 7 to 10 digit excluding country code
-	 * if country code is there means it'll range from 7 to 12 */
+	/* return true if the mobile number ranges from 7 to 15 digit excluding country code
+	 * if country code is there means it'll range from 7 to 15 */
 	public static boolean getMobNum(String num) {
-		boolean res3 = Pattern.matches("^(\\+\\d{1,2})?\\d{7,10}", num);
+		boolean res3 = Pattern.matches("^(\\+\\d{1,2})?\\d{7,15}", num);
 		return res3;
 	}
 }
