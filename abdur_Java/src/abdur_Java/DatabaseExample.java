@@ -9,7 +9,7 @@ public class DatabaseExample {
 				("jdbc:postgresql://localhost:5432/abdur", "postgres", "1234");
 				/* port-5432 DB_name-abdur user_name-postgres pwd-1234 */
 		try {
-			Statement stm = con.createStatement();
+			//Statement stm = con.createStatement();
 //			ResultSet rs = stm.executeQuery("SELECT * FROM personal");
 //			while(rs.next()) {
 //				System.out.println(rs.getInt(1) + " " + rs.getString(2) + " " + 
@@ -32,7 +32,11 @@ public class DatabaseExample {
 //				System.out.println(resSet.getInt(1) + " " + resSet.getString(2) + " " +
 //			resSet.getString(3) + " " + resSet.getInt(4));
 //			}
-			
+			PreparedStatement stm = con.prepareStatement("UPDATE personal SET name = ?"
+					+ " WHERE id = ?");
+			stm.setString(1, "abdur rahman");
+			stm.setInt(2, 4);
+			stm.executeUpdate();
 			
 			
 			
