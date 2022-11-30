@@ -33,15 +33,11 @@ public class DatabaseExample {
 //			resSet.getString(3) + " " + resSet.getInt(4));
 //			}
 			PreparedStatement stm = con.prepareStatement("SELECT * FROM personal");
+			stm.executeQuery();
+			
 //			stm.setString(1, "abdur rahman");
 //			stm.setInt(2, 4);
-			stm.executeQuery();
-			ResultSetMetaData rsmd = stm.getMetaData();
-			System.out.println("1st col : " + rsmd.getColumnName(1));
-			System.out.println("2nd col : " + rsmd.getColumnName(2));
-			System.out.println("3rd col : " + rsmd.getColumnName(3));
-			System.out.println("4th col : " + rsmd.getColumnName(4));
-			System.out.println("Total col count : " + rsmd.getColumnCount());
+			
 			
 		}catch(SQLException e) {
 			System.out.println(e);
