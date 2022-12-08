@@ -1,7 +1,7 @@
 package abdur_Java;
 
 import java.util.Scanner;
-
+// Merge two sorted array into single array
 public class ZohoArrays2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -33,7 +33,6 @@ public class ZohoArrays2 {
 				}else {
 					resArr[resI] = secArr[k];
 					resI += 1;
-					//k -= 1; //j -= 1;
 				}
 				if(k >= (secArrlen-1) || j >= firstArrlen) {
 					break twoloop;
